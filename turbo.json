@@ -1,0 +1,1 @@
+{"extends": ["//"],"globalDependencies": ["**/package.json"],"pipeline": {"build": {"outputs": ["dist/**", ".next/**"],"cache": true},"dev": {"cache": false,"persistent": true},"lint": {"outputs": []},"test": {"outputs": ["coverage/**"],"cache": true}}}
