@@ -1,0 +1,45 @@
+{
+  "name": "oneclicktools",
+  "version": "1.0.0",
+  "description": "OneClickTools - A monorepo project for efficient development tools",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "install-all": "npm install",
+    "build": "npm run build --workspaces",
+    "dev": "npm run dev --workspaces",
+    "test": "npm run test --workspaces",
+    "lint": "npm run lint --workspaces",
+    "format": "npm run format --workspaces",
+    "clean": "npm run clean --workspaces && rm -rf node_modules",
+    "preinstall": "node scripts/preinstall.js || true"
+  },
+  "keywords": [
+    "monorepo",
+    "tools",
+    "development",
+    "oneclicktools"
+  ],
+  "author": "erpriyanshu8",
+  "license": "MIT",
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0",
+    "lerna": "^7.4.0",
+    "prettier": "^3.1.0",
+    "eslint": "^8.54.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/erpriyanshu8/oneclicktools.git"
+  },
+  "bugs": {
+    "url": "https://github.com/erpriyanshu8/oneclicktools/issues"
+  },
+  "homepage": "https://github.com/erpriyanshu8/oneclicktools#readme"
+}
